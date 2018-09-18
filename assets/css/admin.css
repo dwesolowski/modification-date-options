@@ -1,0 +1,24 @@
+
+#modification_date_timestamp.modification_date:before {
+    font: normal 20px/1 dashicons;
+    content: "\f469";
+    position: relative;
+    speak: none;
+    display: inline-block;
+    color: #82878c;
+    margin-left: -2px;
+    padding-right: 4px;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#modificationdatediv {
+    line-height: 2em;
+}
+input.modification_date {
+    margin-top: 1px;
+    margin-right: 7px;
+}
+p#modification_date_timestamp.modification_date {
+    margin-bottom: 0;
+}
