@@ -102,17 +102,17 @@ class ModificationDateOptions {
             $switch = $_POST['modification_date_options'];
 
             switch ($switch) {
-                case "date_mod":
+                case "modified":
                     update_post_meta( $postarr['ID'], '_modification_date_options', 'modified' );
                     break;
 
-                case "not_mod":
+                case "unmodified":
                     $data['post_modified'] = $postarr['post_date'];
                     $data['post_modified_gmt'] = $postarr['post_date_gmt'];
                     update_post_meta( $postarr['ID'], '_modification_date_options', 'unmodified' );
                     break;
 
-                case "current_mod":
+                case "existing":
                     $data['post_modified'] = $postarr['post_modified'];
                     $data['post_modified_gmt'] = $postarr['post_modified_gmt'];
                     update_post_meta( $postarr['ID'], '_modification_date_options', 'existing' );
